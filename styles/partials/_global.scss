@@ -34,7 +34,13 @@ h1 {
 }
 
 h2 {
-    @include primaryFont(18, #f1f1f1);
+    @include primaryFont(35, Black);
+    margin-bottom: 25px;
+}
+
+h3 {
+    @include primaryFont(20, #2EC4B6);
+    text-transform: none;
 }
 
 p {
