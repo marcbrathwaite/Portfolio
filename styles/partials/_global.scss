@@ -1,0 +1,43 @@
+@mixin primaryFont($size, $colour) {
+    // font-family: 'Oswald', sans-serif;
+    font-family: 'Prata', serif;
+    // font-weight: bold;
+    font-size: $size * 1px;
+    font-size: ($size/10) * 1rem;
+    text-transform: uppercase;
+    line-height: 1.6;
+    color: $colour;
+}
+
+@mixin secondaryFont($size, $colour) {
+    font-family: 'Cabin', sans-serif;
+    font-size: $size * 1px;
+    font-size: ($size/10) * 1rem;
+    line-height: 1.6;
+    color: $colour;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    @include primaryFont(55, #f1f1f1);
+    // @include primaryFont(50, #98D2EB);
+    text-transform: none;
+}
+
+h2 {
+    @include primaryFont(18, #f1f1f1);
+}
+
+p {
+    @include secondaryFont(18, black);
+}
+
