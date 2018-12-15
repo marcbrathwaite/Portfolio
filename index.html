@@ -18,6 +18,8 @@
     <!-- Add skip link -->
     <header class="header">
         <nav class="header__nav wrapper">
+                <!-- <h2 class="header__logo">brathWorks</h2> -->
+            
             <ul class="header__navList">
                 <li class="header__navListItem">
                     <a href="#about" class="header__navLink">
@@ -53,25 +55,24 @@
                 </p>
             </div>
         </div>
-        <div class="header__arrowContainer">
+        <!-- <div class="header__arrowContainer">
             <a href="#about" class="header__arrowLink">
                 <i class="fas fa-angle-double-down"></i>
             </a>
-        </div>
+        </div> -->
     </header>
     <main>
         <section id="about" class="aboutSection">
             <div class="aboutSection__container wrapper">
                 <h2 class="aboutSection__heading">About</h2>
                 <div class="aboutSection__columnWrapper">
-                    
                     <div class="aboutSection__imgContainer">
                         <div class="aboutSection__img">
                         </div>
                     </div>
                     
-                    <div class="aboutSection__moduleContainer">
-                            <div class="aboutSection__textModule">
+                    <div class="aboutSection__textContainer">
+                            <!-- <div class="aboutSection__textModule">
                                 <h3>
                                     <i class="fas fa-laptop-code"></i>
                                     What I Do
@@ -100,8 +101,8 @@
                                 <p class="aboutSection__text">
                                     I currently live in Toronto after moving from Barbados 6 years ago. I feel in love with the city and all that it has to offer.
                                 </p>
-                            </div>
-                        <!-- <p class="aboutSection__text">
+                            </div> -->
+                        <p class="aboutSection__text">
                            Hello, I am a front-end developer based in Toronto. I love the problem solving aspect of coding, and I have a serious passion for learning new technologies and improving my skillset.
                         </p>
                         <p class="aboutSection__text">
@@ -112,10 +113,133 @@
                         <p class="aboutSection__text">
                             Outside of coding, you can find me at the gym in a bootcamp class or roaming the city andsocial media for new
                             restaurant experiences.
-                        </p> -->
+                        </p>
 
                     </div>
                     
+                </div>
+            </div>
+        </section>
+        <section id="work" class="workSection">
+            <div class="workSection__Container wrapper">
+                <h2 class="workSection__heading">
+                    Latest Works
+                </h2>
+                <!-- GoFundMyWedding -->
+                <div class="workSection__projectContainer">
+                    <div class="workSection__projectImgContainer">
+                        <a href="https://go-fund-my-wedding.firebaseapp.com/" target="_blank">
+                            <img src="./img/goFundMyWedding.png" alt="Thunderbolt display showing goFundmywedding web application">
+                        </a>
+                    </div>
+                    <div class="workSection__projectDescContainer">
+                        <h3>React and Firebase project</h3>
+                        <p>GoFundMyWedding was developed as a group project for a mock client where a couple could create a wedding registry for non-material items like a trip to Japan or tickets to a Raptors game, and guests could then claim that they will pay all or part of the items</p>
+                        <p>
+                            React / React Router / Javscript / Firebase / HTML / SASS / Responsive
+                        </p>
+
+                        <div class="workSection__buttonContainer">
+                            <a href="https://go-fund-my-wedding.firebaseapp.com/" target="_blank" class="workSection__button">
+                                View Live
+                            </a>
+                            <a href="https://github.com/Team-JAMS/shielarose_Janet_Marc_Project6" target="_blank" class="workSection__button">
+                                View Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Currency Converter -->
+                <div class="workSection__projectContainer">
+                    <div class="workSection__projectDescContainer workSection__projectDescContainer--left">
+                        <h3>React, Firebase and API project</h3>
+                        <p>Using the Foeign Exchange rates API, this app allows users to view the latest conversion rates published by European Central bank as well as perform conversion between 32 currencies </p>
+                        <p>
+                            React / Javscript / Firebase / HTML / SASS / Responsive
+                        </p>
+                
+                        <div class="workSection__buttonContainer workSection__buttonContainer--right">
+                            <a href="https://hy-project5-6034a.firebaseapp.com/" target="_blank" class="workSection__button">
+                                View Live
+                            </a>
+                            <a href="https://github.com/marcbrathwaite/marc_brathwaite_project5" target="_blank" class="workSection__button">
+                                View Github
+                            </a>
+                        </div>
+                    </div>
+                    <div class="workSection__projectImgContainer workSection__projectImgContainer--right">
+                        <a href="https://hy-project5-6034a.firebaseapp.com/" target="_blank">
+                            <img src="./img/goFundMyWedding.png" alt="Thunderbolt display showing Converency Converter web application">
+                        </a>
+                    </div>
+                </div>
+                <!-- NutriWeb -->
+                <div class="workSection__projectContainer">
+                    <div class="workSection__projectImgContainer">
+                        <a href="http://www.brathworks.com/nutriweb2/" target="_blank">
+                            <img src="./img/nutriweb.png" alt="Thunderbolt display showing NutriWeb web application">
+                        </a>
+                    </div>
+                    <div class="workSection__projectDescContainer">
+                        <h3>jQuery and API project</h3>
+                        <p>Using the USDA Food Composition API, this app was developed as a pair programming project, allowing users to search for the nutritional composition of different foods </p>
+                        <p>jQuery / API / HTML / SASS / Responsive</p>
+                
+                        <div class="workSection__buttonContainer">
+                            <a href="http://www.brathworks.com/nutriweb2/" target="_blank" class="workSection__button">
+                                View Live
+                            </a>
+                            <a href="https://github.com/marcbrathwaite/project4_Jason_Marc" target="_blank" class="workSection__button">
+                                View Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Budget Calculator -->
+                <div class="workSection__projectContainer">
+                    <div class="workSection__projectDescContainer workSection__projectDescContainer--left">
+                        <h3>jQuery Interactive Project</h3>
+                        <p>A simple budget calculator allowing users to input their income and expenses we well as view the running balance </p>
+                        <p>
+                            jQuery / HTML / SASS / Responsive
+                        </p>
+                
+                        <div class="workSection__buttonContainer workSection__buttonContainer--right">
+                            <a href="http://www.brathworks.com/SimpleBudget/" target="_blank" class="workSection__button">
+                                View Live
+                            </a>
+                            <a href="https://github.com/marcbrathwaite/marc_brathwaite_project3" target="_blank" class="workSection__button">
+                                View Github
+                            </a>
+                        </div>
+                    </div>
+                    <div class="workSection__projectImgContainer workSection__projectImgContainer--right">
+                        <a href="http://www.brathworks.com/SimpleBudget/" target="_blank">
+                            <img src="./img/goFundMyWedding.png" alt="Thunderbolt display showing Budget Calculator web application">
+                        </a>
+                    </div>
+                </div>
+                <!-- PSD Conversion -->
+                <div class="workSection__projectContainer">
+                    <div class="workSection__projectImgContainer">
+                        <a href="http://www.brathworks.com/tasty/" target="_blank">
+                            <img src="./img/tasty.png" alt="Thunderbolt display showing Tasty Website">
+                        </a>
+                    </div>
+                    <div class="workSection__projectDescContainer">
+                        <h3>PSD Conversion Project</h3>
+                        <p>PSD Conversion of a food blogger website </p>
+                        <p> HTML / CSS3 / Responsive </p>
+                
+                        <div class="workSection__buttonContainer">
+                            <a href="http://www.brathworks.com/tasty/" target="_blank" class="workSection__button">
+                                View Live
+                            </a>
+                            <a href="https://github.com/marcbrathwaite/marc_brathwaite_project1" target="_blank" class="workSection__button">
+                                View Github
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

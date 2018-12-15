@@ -219,6 +219,7 @@ h2 {
   text-transform: uppercase;
   line-height: 1.6;
   color: Black;
+  text-align: center;
   margin-bottom: 25px; }
 
 h3 {
@@ -238,11 +239,11 @@ p {
   color: black; }
 
 .header {
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/toronto-mod1.jpg");
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/toronto-mod1.jpg");
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/toronto-mod1.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/toronto-mod1.jpg");
+  height: 105vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/toronto-mod1.jpg");
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/toronto-mod1.jpg");
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/toronto-mod1.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/toronto-mod1.jpg");
   background-size: cover; }
   .header__nav {
     display: -webkit-box;
@@ -251,7 +252,34 @@ p {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 15%; }
+  .header__logoContainer {
+    height: 75px;
+    width: 75px;
+    border: 5px solid #2EC4B6;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header__logo {
+    text-transform: none;
+    color: #2EC4B6;
+    margin: 0;
+    line-height: 0;
+    font-size: 2.5rem; }
   .header__navList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -305,10 +333,8 @@ p {
     line-height: 1.6;
     color: #f1f1f1; }
 
-.aboutSection {
+.aboutSection, .workSection {
   padding: 75px 0; }
-  .aboutSection__heading {
-    text-align: center; }
   .aboutSection__columnWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -326,7 +352,7 @@ p {
     background-size: cover;
     -webkit-box-shadow: 10px 10px black;
     box-shadow: 10px 10px black; }
-  .aboutSection__moduleContainer {
+  .aboutSection__textContainer {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 60%;
     flex: 1 0 60%;
@@ -344,6 +370,61 @@ p {
     margin-bottom: 15px; }
     .aboutSection__textModule:last-of-type {
       margin-bottom: 0; }
+  .aboutSection__text {
+    margin-bottom: 15px; }
+    .aboutSection__text:last-of-type {
+      margin-bottom: 0; }
+
+.workSection__projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  padding: 20px; }
+
+.workSection__projectImgContainer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%;
+  margin-right: 60px; }
+  .workSection__projectImgContainer--right {
+    margin-right: 0; }
+
+.workSection__projectDescContainer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 70%;
+  flex: 1 0 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .workSection__projectDescContainer--left {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 70%;
+    flex: 1 0 70%;
+    margin-right: 60px;
+    text-align: right; }
+
+.workSection__buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .workSection__buttonContainer--right {
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+
+.workSection__button {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid black; }
+  .workSection__button:last-of-type {
+    margin-right: 0; }
 
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
