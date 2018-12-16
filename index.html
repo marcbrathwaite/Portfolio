@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin|Prata" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Archivo:700|Cabin" rel="stylesheet"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet"> -->
     <link rel="stylesheet" href="./styles/style.css">
@@ -45,7 +46,7 @@
         </nav>
         <div class="header__container">
             <div class="header__textContainer wrapper">
-                <h1>
+                <h1 class="heading1">
                     Hi, I'm <span class="header__name">
                         Marc Brathwaite
                     </span>
@@ -63,8 +64,8 @@
     </header>
     <main>
         <section id="about" class="aboutSection">
-            <div class="aboutSection__container wrapper">
-                <h2 class="aboutSection__heading">About</h2>
+            <div class="wrapper">
+                <h2 class="heading2">About</h2>
                 <div class="aboutSection__columnWrapper">
                     <div class="aboutSection__imgContainer">
                         <div class="aboutSection__img">
@@ -73,7 +74,7 @@
                     
                     <div class="aboutSection__textContainer">
                             <!-- <div class="aboutSection__textModule">
-                                <h3>
+                                <h3 class="heading3">
                                     <i class="fas fa-laptop-code"></i>
                                     What I Do
                                 </h3>
@@ -83,7 +84,7 @@
                             </div>
                     
                             <div class="aboutSection__textModule">
-                                <h3>
+                                <h3 class="heading3">
                                     <i class="far fa-grin-hearts"></i>
                                     What I Love
                                 </h3>
@@ -94,7 +95,7 @@
                                 </p>
                             </div>
                             <div class="aboutSection__textModule">
-                                <h3>
+                                <h3 class="heading3">
                                     <i class="fas fa-home"></i>
                                     Where I Live
                                 </h3>
@@ -121,8 +122,8 @@
             </div>
         </section>
         <section id="work" class="workSection">
-            <div class="workSection__Container wrapper">
-                <h2 class="workSection__heading">
+            <div class="wrapper">
+                <h2 class="heading2 heading2--white">
                     Latest Works
                 </h2>
                 <!-- GoFundMyWedding -->
@@ -133,10 +134,10 @@
                         </a>
                     </div>
                     <div class="workSection__projectDescContainer">
-                        <h3>React and Firebase project</h3>
-                        <p>GoFundMyWedding was developed as a group project for a mock client where a couple could create a wedding registry for non-material items like a trip to Japan or tickets to a Raptors game, and guests could then claim that they will pay all or part of the items</p>
+                        <h3 class="heading3">React and Firebase project</h3>
+                        <p>GoFundMyWedding was developed for a mock client where a couple could create a wedding registry for non-material items like a trip to Japan or tickets to a Raptors game, and guests could then claim that they will pay all or part of the items. Collaboration project with <em>Shielarose Gandhi</em> and <em>Janet Bird</em></p>
                         <p>
-                            React / React Router / Javscript / Firebase / HTML / SASS / Responsive
+                            React / React Router / Javscript ES6/ Firebase / HTML / SASS / Responsive
                         </p>
 
                         <div class="workSection__buttonContainer">
@@ -152,10 +153,11 @@
                 <!-- Currency Converter -->
                 <div class="workSection__projectContainer">
                     <div class="workSection__projectDescContainer workSection__projectDescContainer--left">
-                        <h3>React, Firebase and API project</h3>
-                        <p>Using the Foeign Exchange rates API, this app allows users to view the latest conversion rates published by European Central bank as well as perform conversion between 32 currencies </p>
+                        <h3 class="heading3">React, Firebase and API project</h3>
                         <p>
-                            React / Javscript / Firebase / HTML / SASS / Responsive
+                            Using the Foeign Exchange rates API, this app allows users to view the latest conversion rates published by European Central bank as well as perform conversion between 32 currencies </p>
+                        <p>
+                            React / Javscript ES6/ Firebase / HTML / SASS / Responsive
                         </p>
                 
                         <div class="workSection__buttonContainer workSection__buttonContainer--right">
@@ -181,8 +183,10 @@
                         </a>
                     </div>
                     <div class="workSection__projectDescContainer">
-                        <h3>jQuery and API project</h3>
-                        <p>Using the USDA Food Composition API, this app was developed as a pair programming project, allowing users to search for the nutritional composition of different foods </p>
+                        <h3 class="heading3">jQuery and API project</h3>
+                        <p>
+                            Using the USDA Food Composition API, this app allowed users to search for the nutritional composition of different foods. Collaboration with <em>Jason Mortisson</em>.
+                        </p>
                         <p>jQuery / API / HTML / SASS / Responsive</p>
                 
                         <div class="workSection__buttonContainer">
@@ -198,8 +202,9 @@
                 <!-- Budget Calculator -->
                 <div class="workSection__projectContainer">
                     <div class="workSection__projectDescContainer workSection__projectDescContainer--left">
-                        <h3>jQuery Interactive Project</h3>
-                        <p>A simple budget calculator allowing users to input their income and expenses we well as view the running balance </p>
+                        <h3 class="heading3">jQuery Interactive Project</h3>
+                        <p>
+                            A simple budget calculator allowing users to input their income and expenses we well as view the running balance </p>
                         <p>
                             jQuery / HTML / SASS / Responsive
                         </p>
@@ -227,7 +232,7 @@
                         </a>
                     </div>
                     <div class="workSection__projectDescContainer">
-                        <h3>PSD Conversion Project</h3>
+                        <h3 class="heading3">PSD Conversion Project</h3>
                         <p>PSD Conversion of a food blogger website </p>
                         <p> HTML / CSS3 / Responsive </p>
                 
@@ -243,7 +248,107 @@
                 </div>
             </div>
         </section>
+        <section class="skillsSection" id="skills">
+            <div class="wrapper">
+                <h2 class="heading2">
+                    My Skills
+                </h2>
+                <ul class="skillsSection__list">
+                    <li class="skillsSection__listItem">
+                        <i class="devicon-react-original colored skillsSection__icon"></i>
+                        <p class="skillsSection__subtitle">
+                            React
+                        </p>
+                    </li>
+                    <li class="skillsSection__listItem">
+                        <i class="devicon-javascript-plain colored skillsSection__icon"></i>
+                        <p class="skillsSection__subtitle">
+                            Javascript ES6
+                        </p>
+                    </li>
+                    <li class="skillsSection__listItem">
+                        <img src="./img/firebase.png" alt="Firebase Symbol" class="skillsSection__image">
+                        <p class="skillsSection__subtitle">
+                            Firebase
+                        </p>
+                    </li>
+                    <li class="skillsSection__listItem">
+                        <i class="devicon-jquery-plain colored skillsSection__icon"></i>
+                        <p class="skillsSection__subtitle">
+                            jQuery
+                        </p>
+                    </li>
+                    <li class="skillsSection__listItem">
+                        <i class="devicon-html5-plain colored skillsSection__icon"></i>
+                        <p class="skillsSection__subtitle">
+                            HTML5
+                        </p>
+                    </li>
+                    <li class="skillsSection__listItem">
+                        <i class="devicon-css3-plain colored skillsSection__icon"></i>
+                        <p class="skillsSection__subtitle">
+                            CSS3
+                        </p>
+                    </li>
+                    <li class="skillsSection__listItem">
+                        <i class="devicon-sass-original colored skillsSection__icon"></i>
+                        <p class="skillsSection__subtitle">
+                            SASS
+                        </p>
+                    </li>
+                    <li class="skillsSection__listItem">
+                        <i class="devicon-github-plain colored skillsSection__icon"></i>
+                        <p class="skillsSection__subtitle">
+                            GitHub
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contactSection" id="contact">
+            <div class="wrapper contactSection__container">
+                <h2 class="heading2">
+                    Contact Me
+                </h2>
+                <p>Have a question or want to work together?</p>
+                <p>I'm excited to hear from you</p>
+                <p><a href="mailto:marcbrathwaite@gmail.com">marcbrathwaite[at]gmail[dot]com</a></p>
 
+                <ul class="contactSection__socialMedia">
+                    <li class="contactSection__socialItem">
+                        <a href="https://github.com/marcbrathwaite" class="contactSection__socialLink" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span class="visuallyhidden">GitHub</span>
+                        </a>
+                    </li>
+                    <li class="contactSection__socialItem">
+                        <a href="https://twitter.com/BrathwaiteMarc" class="contactSection__socialLink" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <span class="visuallyhidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="contactSection__socialItem">
+                        <a href="https://www.linkedin.com/in/marcbrathwaite" class="contactSection__socialLink" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="visuallyhidden">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="contactSection__socialItem">
+                        <a href="https://www.instagram.com/brathhole/?hl=en" class="contactSection__socialLink" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span class="visuallyhidden">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="contactSection__socialItem">
+                        <a href="https://medium.com/@marcbrathwaite" class="contactSection__socialLink" target="_blank">
+                            <i class="fab fa-medium-m"></i>
+                            <span class="visuallyhidden">Medium</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
     </main>
     <footer>
 

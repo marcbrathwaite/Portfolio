@@ -1,7 +1,8 @@
 .header {
     height: 105vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('../img/toronto-mod1.jpg');
+    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/toronto-mod1.jpg');
+    background: linear-gradient(to bottom, #242682e0, #242682e0),url('../img/toronto-mod1.jpg');
+    // background: linear-gradient(to bottom, #fdc600d3, #fdc800d3),url('../img/toronto-mod1.jpg');
     background-size: cover;
 
     // border: 1px solid black;
@@ -28,22 +29,6 @@
         align-items: center;
     }
 
-    &__logo {
-        // width: 75px;
-        // height: 75px;
-        text-transform: none;
-        color: #2EC4B6;
-        // border: 1px solid #2EC4B6;
-        margin: 0;
-        line-height: 0;
-        font-size: 2.5rem;
-        // border: 5px solid #2EC4B6;
-        // border-radius: 50%;
-        // font-size: 1.8rem;
-        // text-align: center;
-        // display: flex;
-        // justify-content: center;
-    }
 
     &__navList {
         display: flex;
@@ -73,15 +58,14 @@
         height: 85%;
     }
 
-   
-
 
     &__text {
         color: #f1f1f1;
     }
 
     &__name {
-        color: #2EC4B6;
+        // color: #2EC4B6;
+        color: #40F99B;
         // color: #c0392b;
     }
 

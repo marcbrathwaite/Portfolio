@@ -203,7 +203,7 @@ html {
   width: 80%;
   margin: 0 auto; }
 
-h1 {
+.heading1 {
   font-family: 'Prata', serif;
   font-size: 55px;
   font-size: 5.5rem;
@@ -212,17 +212,19 @@ h1 {
   color: #f1f1f1;
   text-transform: none; }
 
-h2 {
+.heading2 {
   font-family: 'Prata', serif;
   font-size: 35px;
   font-size: 3.5rem;
   text-transform: uppercase;
   line-height: 1.6;
-  color: Black;
+  color: #232528;
   text-align: center;
   margin-bottom: 25px; }
+  .heading2--white {
+    color: #f1f1f1; }
 
-h3 {
+.heading3 {
   font-family: 'Prata', serif;
   font-size: 20px;
   font-size: 2rem;
@@ -240,10 +242,10 @@ p {
 
 .header {
   height: 105vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/toronto-mod1.jpg");
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/toronto-mod1.jpg");
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/toronto-mod1.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/toronto-mod1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(#242682e0), to(#242682e0)), url("../img/toronto-mod1.jpg");
+  background: -webkit-linear-gradient(top, #242682e0, #242682e0), url("../img/toronto-mod1.jpg");
+  background: -o-linear-gradient(top, #242682e0, #242682e0), url("../img/toronto-mod1.jpg");
+  background: linear-gradient(to bottom, #242682e0, #242682e0), url("../img/toronto-mod1.jpg");
   background-size: cover; }
   .header__nav {
     display: -webkit-box;
@@ -274,12 +276,6 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .header__logo {
-    text-transform: none;
-    color: #2EC4B6;
-    margin: 0;
-    line-height: 0;
-    font-size: 2.5rem; }
   .header__navList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -319,7 +315,7 @@ p {
   .header__text {
     color: #f1f1f1; }
   .header__name {
-    color: #2EC4B6; }
+    color: #40F99B; }
   .header__arrowContainer {
     position: absolute;
     left: 50%;
@@ -333,8 +329,9 @@ p {
     line-height: 1.6;
     color: #f1f1f1; }
 
-.aboutSection, .workSection {
-  padding: 75px 0; }
+.aboutSection {
+  padding: 50px 0;
+  background: #eaedf4; }
   .aboutSection__columnWrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -375,56 +372,104 @@ p {
     .aboutSection__text:last-of-type {
       margin-bottom: 0; }
 
-.workSection__projectContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 50px;
-  padding: 20px; }
-
-.workSection__projectImgContainer {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 30%;
-  flex: 1 0 30%;
-  margin-right: 60px; }
-  .workSection__projectImgContainer--right {
-    margin-right: 0; }
-
-.workSection__projectDescContainer {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 0 70%;
-  flex: 1 0 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-  .workSection__projectDescContainer--left {
+.workSection {
+  padding: 50px 0; }
+  .workSection__projectContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 30px 35px;
+    background: #2d2fa5;
+    border-radius: 15px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .workSection__projectContainer:last-of-type {
+      margin-bottom: 0; }
+    .workSection__projectContainer p {
+      color: white; }
+  .workSection__projectImgContainer {
     -webkit-box-flex: 1;
-    -ms-flex: 1 0 70%;
-    flex: 1 0 70%;
-    margin-right: 60px;
-    text-align: right; }
+    -ms-flex: 1 0 calc(30% - 30px);
+    flex: 1 0 calc(30% - 30px);
+    margin-right: 60px; }
+    .workSection__projectImgContainer--right {
+      margin-right: 0; }
+  .workSection__projectDescContainer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 calc(70% - 30px);
+    flex: 1 0 calc(70% - 30px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .workSection__projectDescContainer--left {
+      margin-right: 60px;
+      text-align: right; }
+  .workSection__buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .workSection__buttonContainer--right {
+      -ms-flex-item-align: end;
+      align-self: flex-end; }
+  .workSection__button {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid black; }
+    .workSection__button:last-of-type {
+      margin-right: 0; }
 
-.workSection__buttonContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .workSection__buttonContainer--right {
-    -ms-flex-item-align: end;
-    align-self: flex-end; }
+.skillsSection {
+  padding: 50px 0; }
+  .skillsSection__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .skillsSection__listItem {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 25%;
+    flex: 1 0 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .skillsSection__listItem:nth-of-type(n+5) {
+      margin-top: 50px; }
+  .skillsSection__icon {
+    font-size: 7.5rem; }
+  .skillsSection__image {
+    display: block;
+    width: 75px;
+    height: 75px; }
 
-.workSection__button {
-  display: block;
-  color: black;
-  text-decoration: none;
-  margin-right: 10px;
-  padding: 5px 10px;
-  border: 1px solid black; }
-  .workSection__button:last-of-type {
-    margin-right: 0; }
+.contactSection {
+  padding: 50px 0; }
+  .contactSection__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
