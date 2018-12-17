@@ -255,6 +255,9 @@ p {
   line-height: 1.6;
   color: black; }
 
+.inVisible {
+  visibility: hidden; }
+
 .header {
   height: 105vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#242682e0), to(#242682e0)), url("../img/toronto-mod1.jpg");
@@ -442,7 +445,7 @@ p {
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 50px;
-    padding: 30px 35px;
+    padding: 45px 35px;
     background: white;
     border-radius: 15px;
     -ms-flex-wrap: wrap;
@@ -453,7 +456,11 @@ p {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 calc(30% - 30px);
     flex: 1 0 calc(30% - 30px);
-    margin-right: 60px; }
+    margin-right: 60px;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s; }
     .workSection__projectImgContainer--right {
       margin-right: 0; }
   .workSection__projectDescContainer {
@@ -466,12 +473,18 @@ p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s; }
     .workSection__projectDescContainer--left {
       margin-right: 60px;
       text-align: right; }
   .workSection__projectDesc {
     margin-bottom: 20px; }
+  .workSection__collab {
+    color: black; }
   .workSection__projectTechContainer {
     margin-bottom: 20px;
     display: -webkit-box;
@@ -513,7 +526,7 @@ p {
     .workSection__button:last-of-type {
       margin-right: 0; }
     .workSection__button:hover, .workSection__button:active {
-      background: #4143cb; }
+      background: #36454F; }
 
 .skillsSection {
   padding-top: 50px;

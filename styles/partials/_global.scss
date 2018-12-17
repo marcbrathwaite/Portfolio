@@ -62,3 +62,7 @@ p {
     @include secondaryFont(18, black);
 }
 
+.inVisible {
+    visibility: hidden;
+}
+
