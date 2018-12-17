@@ -6,21 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marc Brathwaite | Front-end Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Prata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Prata" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Archivo:700|Cabin" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet"> -->
     <link rel="stylesheet" href="./styles/style.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="./img/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./img/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./img/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="./img/android-chrome-192x192.png" sizes="192x192">
+<meta name="msapplication-square70x70logo" content="./img/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="./img/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="./img/widetile.png" />
+<meta name="msapplication-square310x310logo" content="./img/largetile.png" />
 </head>
 
 <body>
-    <!-- Add skip link -->
     <header class="header">
-        <nav class="header__nav wrapper">
-                <!-- <h2 class="header__logo">brathWorks</h2> -->
-            
+        <label for="toggle" class="header__hamburger">
+                <i class="fas fa-bars"></i>
+        </label>
+        <!-- Checkbox to use with mobile menu -->
+        <input type="checkbox" id="toggle" name="toggle" class="header__toggle">
+        <nav class="header__nav">
+
             <ul class="header__navList">
                 <li class="header__navListItem">
                     <a href="#about" class="header__navLink">
@@ -56,75 +75,45 @@
                 </p>
             </div>
         </div>
-        <!-- <div class="header__arrowContainer">
-            <a href="#about" class="header__arrowLink">
-                <i class="fas fa-angle-double-down"></i>
-            </a>
-        </div> -->
     </header>
     <main>
         <section id="about" class="aboutSection">
-            <div class="wrapper">
+            <div class="wrapper aboutSection__container">
                 <h2 class="heading2">About</h2>
                 <div class="aboutSection__columnWrapper">
                     <div class="aboutSection__imgContainer">
                         <div class="aboutSection__img">
                         </div>
                     </div>
-                    
+
                     <div class="aboutSection__textContainer">
-                            <!-- <div class="aboutSection__textModule">
-                                <h3 class="heading3">
-                                    <i class="fas fa-laptop-code"></i>
-                                    What I Do
-                                </h3>
-                                <p class="aboutSection__text">
-                                    Hello, I am a front-end developer with a skillset including React, ES6 Javascript, HTML and CSS3. Before pursuing a career in Web Development, I worked as a Mobile Engineer in the Telecoms industry for 10 years. I believe my experience in this field has benefited me in my career transition especially as it relates to team work,critical thinking and effective communication.
-                                </p>
-                            </div>
-                    
-                            <div class="aboutSection__textModule">
-                                <h3 class="heading3">
-                                    <i class="far fa-grin-hearts"></i>
-                                    What I Love
-                                </h3>
-                                <p class="aboutSection__text">
-                                    I love the problem solving aspect of coding, and I have a serious passion for learning new technologies and improving
-                                    my skillset.
-                                    Outside of coding, you can find me at the gym in a bootcamp class or roaming the city andsocial media for new restaurant experiences.
-                                </p>
-                            </div>
-                            <div class="aboutSection__textModule">
-                                <h3 class="heading3">
-                                    <i class="fas fa-home"></i>
-                                    Where I Live
-                                </h3>
-                                <p class="aboutSection__text">
-                                    I currently live in Toronto after moving from Barbados 6 years ago. I feel in love with the city and all that it has to offer.
-                                </p>
-                            </div> -->
                         <p class="aboutSection__text">
-                           Hello, I am a front-end developer based in Toronto. I love the problem solving aspect of coding, and I have a serious passion for learning new technologies and improving my skillset.
+                            Hello, I am a front-end developer based in Toronto. I love the problem solving aspect of
+                            coding, and I have a serious passion for learning new technologies and improving my
+                            skillset.
                         </p>
                         <p class="aboutSection__text">
-                            Before pursuing a career in Web Development, I worked as a Mobile Engineer in the Telecoms industry for 10 years. I
-                            believe my experience in this field has benefited me in my career transition especially as it relates to team work,
+                            Before pursuing a career in Web Development, I worked as a Mobile Engineer in the Telecoms
+                            industry for 10 years. I
+                            believe my experience in this field has benefited me in my career transition especially as
+                            it relates to team work,
                             critical think and effective communication.
                         </p>
                         <p class="aboutSection__text">
-                            Outside of coding, you can find me at the gym in a bootcamp class or roaming the city andsocial media for new
+                            Outside of coding, you can find me at the gym in a bootcamp class or roaming the city and
+                            social media for new
                             restaurant experiences.
                         </p>
 
                     </div>
-                    
+
                 </div>
             </div>
         </section>
         <section id="work" class="workSection">
-            <div class="wrapper">
-                <h2 class="heading2 heading2--white">
-                    Latest Works
+            <div class="wrapper workSection__container">
+                <h2 class="heading2">
+                    Projects
                 </h2>
                 <!-- GoFundMyWedding -->
                 <div class="workSection__projectContainer">
@@ -135,9 +124,17 @@
                     </div>
                     <div class="workSection__projectDescContainer">
                         <h3 class="heading3">React and Firebase project</h3>
-                        <p>GoFundMyWedding was developed for a mock client where a couple could create a wedding registry for non-material items like a trip to Japan or tickets to a Raptors game, and guests could then claim that they will pay all or part of the items. Collaboration project with <em>Shielarose Gandhi</em> and <em>Janet Bird</em></p>
-                        <p>
-                            React / React Router / Javscript ES6/ Firebase / HTML / SASS / Responsive
+                        <p class="workSection__projectDesc">GoFundMyWedding was developed for a mock client where a
+                            couple could create a wedding registry for non-material items like a trip to Japan or
+                            tickets to a Raptors game, and guests could then claim that they will pay all or part of
+                            the items. Collaboration project with <em>Shielarose Gandhi</em> and <em>Janet Bird.</em></p>
+                        <p class="workSection__projectTechContainer">
+                            <span class="workSection__projectTech">React</span> <span class="workSection__projectTech">React
+                                Router</span> <span class="workSection__projectTech">Javscript ES6</span>
+                            <span class="workSection__projectTech">Firebase</span>
+                            <span class="workSection__projectTech">HTML</span>
+                            <span class="workSection__projectTech">SASS</span>
+                            <span class="workSection__projectTech">Responsive</span>
                         </p>
 
                         <div class="workSection__buttonContainer">
@@ -151,15 +148,34 @@
                     </div>
                 </div>
                 <!-- Currency Converter -->
-                <div class="workSection__projectContainer">
+                <div class="workSection__projectContainer workSection__projectContainer--right">
                     <div class="workSection__projectDescContainer workSection__projectDescContainer--left">
                         <h3 class="heading3">React, Firebase and API project</h3>
-                        <p>
-                            Using the Foeign Exchange rates API, this app allows users to view the latest conversion rates published by European Central bank as well as perform conversion between 32 currencies </p>
-                        <p>
-                            React / Javscript ES6/ Firebase / HTML / SASS / Responsive
+                        <p class="workSection__projectDesc">
+                            Using the Foeign Exchange rates API, this app allows users to view the latest conversion
+                            rates published by European Central bank as well as perform conversion between 32
+                            currencies </p>
+                        <p class="workSection__projectTechContainer workSection__projectTechContainer--right">
+                            <span class="workSection__projectTech">
+                                React
+                            </span>
+                            <span class="workSection__projectTech">
+                                Javscript ES6
+                            </span>
+                            <span class="workSection__projectTech">
+                                Firebase
+                            </span>
+                            <span class="workSection__projectTech">
+                                HTML
+                            </span>
+                            <span class="workSection__projectTech">
+                                SASS
+                            </span>
+                            <span class="workSection__projectTech">
+                                Responsive
+                            </span>
                         </p>
-                
+
                         <div class="workSection__buttonContainer workSection__buttonContainer--right">
                             <a href="https://hy-project5-6034a.firebaseapp.com/" target="_blank" class="workSection__button">
                                 View Live
@@ -175,6 +191,7 @@
                         </a>
                     </div>
                 </div>
+
                 <!-- NutriWeb -->
                 <div class="workSection__projectContainer">
                     <div class="workSection__projectImgContainer">
@@ -184,11 +201,28 @@
                     </div>
                     <div class="workSection__projectDescContainer">
                         <h3 class="heading3">jQuery and API project</h3>
-                        <p>
-                            Using the USDA Food Composition API, this app allowed users to search for the nutritional composition of different foods. Collaboration with <em>Jason Mortisson</em>.
+                        <p class="workSection__projectDesc">
+                            Using the USDA Food Composition API, this app allowed users to search for the nutritional
+                            composition of different foods. Collaboration with <em>Jason Mortisson</em>.
                         </p>
-                        <p>jQuery / API / HTML / SASS / Responsive</p>
-                
+                        <p class="workSection__projectTechContainer">
+                            <span class="workSection__projectTech">
+                                jQuery
+                            </span>
+                            <span class="workSection__projectTech">
+                                API
+                            </span>
+                            <span class="workSection__projectTech">
+                                HTML
+                            </span>
+                            <span class="workSection__projectTech">
+                                SASS
+                            </span>
+                            <span class="workSection__projectTech">
+                                Responsive
+                            </span>
+                        </p>
+
                         <div class="workSection__buttonContainer">
                             <a href="http://www.brathworks.com/nutriweb2/" target="_blank" class="workSection__button">
                                 View Live
@@ -200,15 +234,27 @@
                     </div>
                 </div>
                 <!-- Budget Calculator -->
-                <div class="workSection__projectContainer">
+                <div class="workSection__projectContainer workSection__projectContainer--right">
                     <div class="workSection__projectDescContainer workSection__projectDescContainer--left">
                         <h3 class="heading3">jQuery Interactive Project</h3>
-                        <p>
-                            A simple budget calculator allowing users to input their income and expenses we well as view the running balance </p>
-                        <p>
-                            jQuery / HTML / SASS / Responsive
+                        <p class="workSection__projectDesc">
+                            A simple budget calculator allowing users to input their income and expenses we well as
+                            view the running balance </p>
+                        <p class="workSection__projectTechContainer workSection__projectTechContainer--right">
+                            <span class="workSection__projectTech">
+                                jQuery
+                            </span>
+                            <span class="workSection__projectTech">
+                                HTML
+                            </span>
+                            <span class="workSection__projectTech">
+                                SASS
+                            </span>
+                            <span class="workSection__projectTech">
+                                Responsive
+                            </span>
                         </p>
-                
+
                         <div class="workSection__buttonContainer workSection__buttonContainer--right">
                             <a href="http://www.brathworks.com/SimpleBudget/" target="_blank" class="workSection__button">
                                 View Live
@@ -233,9 +279,21 @@
                     </div>
                     <div class="workSection__projectDescContainer">
                         <h3 class="heading3">PSD Conversion Project</h3>
-                        <p>PSD Conversion of a food blogger website </p>
-                        <p> HTML / CSS3 / Responsive </p>
-                
+                        <p class="workSection__projectDesc">
+                            PSD Conversion of a food blogger website.
+                        </p>
+                        <p class="workSection__projectTechContainer">
+                            <span class="workSection__projectTech">
+                                HTML
+                            </span>
+                            <span class="workSection__projectTech">
+                                CSS3
+                            </span>
+                            <span class="workSection__projectTech">
+                                Responsive
+                            </span>
+                        </p>
+
                         <div class="workSection__buttonContainer">
                             <a href="http://www.brathworks.com/tasty/" target="_blank" class="workSection__button">
                                 View Live
@@ -249,55 +307,64 @@
             </div>
         </section>
         <section class="skillsSection" id="skills">
-            <div class="wrapper">
+            <div class="wrapper skillsSection__container">
                 <h2 class="heading2">
                     My Skills
                 </h2>
                 <ul class="skillsSection__list">
                     <li class="skillsSection__listItem">
-                        <i class="devicon-react-original colored skillsSection__icon"></i>
+                        <i class="devicon-react-original skillsSection__icon"></i>
                         <p class="skillsSection__subtitle">
                             React
                         </p>
                     </li>
                     <li class="skillsSection__listItem">
-                        <i class="devicon-javascript-plain colored skillsSection__icon"></i>
+                        <i class="devicon-javascript-plain skillsSection__icon"></i>
                         <p class="skillsSection__subtitle">
                             Javascript ES6
                         </p>
                     </li>
                     <li class="skillsSection__listItem">
-                        <img src="./img/firebase.png" alt="Firebase Symbol" class="skillsSection__image">
+                        <svg version="1.1" id="Layer_1" class="skillsSection__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px" y="0px" width="256px" height="351px" viewBox="0 0 256 351" enable-background="new 0 0 256 351"
+                            xml:space="preserve">
+                            <path fill="#36454F" d="M0,282.998l2.123-2.973L102.527,89.512l0.212-2.017L58.479,4.358c-3.708-6.964-14.148-5.204-15.365,2.592
+	L0,282.998z" />
+                            <path fill="#36454F" d="M135.005,150.381l32.955-33.751l-32.964-62.93c-3.13-5.957-11.867-5.974-14.963,0l-17.612,33.589v2.861
+	L135.005,150.381z" />
+                            <path fill="#36454F" d="M139.121,347.551l116.275-64.848L222.191,78.209c-1.039-6.398-8.888-8.928-13.467-4.34L0,282.998
+	l115.608,64.547C122.915,351.625,131.812,351.627,139.121,347.551" />
+                        </svg>
                         <p class="skillsSection__subtitle">
                             Firebase
                         </p>
                     </li>
                     <li class="skillsSection__listItem">
-                        <i class="devicon-jquery-plain colored skillsSection__icon"></i>
+                        <i class="devicon-jquery-plain skillsSection__icon"></i>
                         <p class="skillsSection__subtitle">
                             jQuery
                         </p>
                     </li>
                     <li class="skillsSection__listItem">
-                        <i class="devicon-html5-plain colored skillsSection__icon"></i>
+                        <i class="devicon-html5-plain skillsSection__icon"></i>
                         <p class="skillsSection__subtitle">
                             HTML5
                         </p>
                     </li>
                     <li class="skillsSection__listItem">
-                        <i class="devicon-css3-plain colored skillsSection__icon"></i>
+                        <i class="devicon-css3-plain skillsSection__icon"></i>
                         <p class="skillsSection__subtitle">
                             CSS3
                         </p>
                     </li>
                     <li class="skillsSection__listItem">
-                        <i class="devicon-sass-original colored skillsSection__icon"></i>
+                        <i class="devicon-sass-original skillsSection__icon"></i>
                         <p class="skillsSection__subtitle">
                             SASS
                         </p>
                     </li>
                     <li class="skillsSection__listItem">
-                        <i class="devicon-github-plain colored skillsSection__icon"></i>
+                        <i class="devicon-github-plain skillsSection__icon"></i>
                         <p class="skillsSection__subtitle">
                             GitHub
                         </p>
@@ -307,12 +374,16 @@
         </section>
         <section class="contactSection" id="contact">
             <div class="wrapper contactSection__container">
-                <h2 class="heading2">
+                <h2 class="heading2 heading2--white">
                     Contact Me
                 </h2>
-                <p>Have a question or want to work together?</p>
-                <p>I'm excited to hear from you</p>
-                <p><a href="mailto:marcbrathwaite@gmail.com">marcbrathwaite[at]gmail[dot]com</a></p>
+                <p class="contactSection__text">Have a question or want to work together?</p>
+                <p class="contactSection__text">I'm excited to hear from you</p>
+                <p class="contactSection__text">
+                    <a href="mailto:marcbrathwaite@gmail.com" class="contactSection__emailLink">
+                        marcbrathwaite[at]gmail[dot]com
+                    </a>
+                </p>
 
                 <ul class="contactSection__socialMedia">
                     <li class="contactSection__socialItem">
@@ -350,8 +421,15 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="footer__text">
+                Marc Brathwaite &copy;2008 | Profile Photo Credit: <a href="https://twitter.com/pamlau" target="_blank"
+                    class="footer__credit">
+                    @pamlau
+                </a>
+            </p>
+        </div>
     </footer>
 
 </body>

@@ -1,0 +1,104 @@
+@media (max-width: 1050px) {
+    .aboutSection__img {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .wrapper {
+        width: 90%;
+    }
+    
+    .aboutSection__columnWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutSection__imgContainer {
+        margin-bottom: 30px;
+    }
+
+    .workSection__projectContainer {
+        flex-direction:column;
+        align-items: center;
+        &--right {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .workSection__projectImgContainer {
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+
+    .workSection__projectDescContainer {
+        width: 100%;
+        &--left {
+            text-align: left;
+            margin-right:0;
+        }
+    }
+
+    .workSection__projectTechContainer--right {
+        align-self: flex-start;
+    }
+
+    .workSection__buttonContainer--right {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 575px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .header__navList {
+        flex-direction: column;
+    }
+
+    .header__navListItem {
+        margin-bottom: 30px;
+    }
+
+    .contactSection__emailLink {
+        font-size:1.8rem;
+    }
+
+    .aboutSection__text {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .contactSection__emailLink {
+        letter-spacing: 1px;
+    }
+
+    .heading1 {
+        font-size: 5rem;
+    }
+
+    .heading2 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .skillsSection__listItem {
+        flex: 1 0 33.33%;
+        &:nth-of-type(n+4) {
+            margin-top: 50px;
+        }
+    }
+
+    .workSection__button {
+        font-size: 1.8rem;
+        padding: 8px 10px;
+    }
+}
+        

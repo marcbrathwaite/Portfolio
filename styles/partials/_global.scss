@@ -1,7 +1,5 @@
 @mixin primaryFont($size, $colour) {
-    // font-family: 'Oswald', sans-serif;
     font-family: 'Prata', serif;
-    // font-weight: bold;
     font-size: $size * 1px;
     font-size: ($size/10) * 1rem;
     text-transform: uppercase;
@@ -29,22 +27,35 @@ html {
 
 .heading1 {
     @include primaryFont(55, #f1f1f1);
-    // @include primaryFont(50, #98D2EB);
     text-transform: none;
 }
 
 .heading2 {
-    @include primaryFont(35, #232528);
+    @include primaryFont(50, black);
+    position: relative;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     &--white {
-        color: #f1f1f1;
+        color: white;
+        margin-bottom: 30px;
+        align-self: stretch;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 5px solid #2EC4B6;
     }
 }
 
 .heading3 {
     @include primaryFont(20, #2EC4B6);
     text-transform: none;
+    margin-bottom: 20px;
 }
 
 p {
