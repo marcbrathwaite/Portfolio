@@ -1,5 +1,7 @@
 @mixin primaryFont($size, $colour) {
-    font-family: 'Prata', serif;
+    // font-family: 'Prata', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: $size * 1px;
     font-size: ($size/10) * 1rem;
     text-transform: uppercase;
@@ -26,7 +28,7 @@ html {
 }
 
 .heading1 {
-    @include primaryFont(55, #f1f1f1);
+    @include primaryFont(65, #f1f1f1);
     text-transform: none;
 }
 

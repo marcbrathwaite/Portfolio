@@ -6,11 +6,12 @@
 
     &__hamburger {
         position: fixed;
-        top: 30px;
+        top: 19px;
         right: 30px;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #2EC4B6;
         z-index: 100;
+        cursor: pointer;
     }
 
     &__toggle {
@@ -31,7 +32,7 @@
         transition: all 0.3s;
         justify-content: center;
         align-items: center;
-        padding: 20px 0;
+        padding: 10px 0;
         z-index: 90;    
     }
 
@@ -69,7 +70,7 @@
     }
 
     &__name {
-        color: #40F99B;
+        color: #2EC4B6;
     }
 
 
